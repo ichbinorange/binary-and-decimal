@@ -19,17 +19,16 @@ def binary_to_decimal(binary_array)
 end
 
 ### Decimal to Binary
-# def decimal_to_binary(test_array)
-#   test_array.each do |user_number|
-#     quotient_i = user_number.divmod(2)[0]
-#     modulus_i = Array(user_number.divmod(2)[1])
-#     until quotient_i == 0
-#       modulus_i.unshift(quotient_i.divmod(2)[1])
-#       quotient_i = quotient_i.divmod(2)[0]
-#     end
-#     puts "For #{ user_number }, its binary number is \"#{ modulus_i.join }\""
+# def decimal_to_binary(number_base_ten)
+#   quotient = number_base_ten.divmod(2)[0]
+#   modulus = Array(number_base_ten.divmod(2)[1])
+#   until quotient == 0
+#     modulus.unshift(quotient.divmod(2)[1])
+#     quotient = quotient.divmod(2)[0]
 #   end
+#   return "For #{ number_base_ten }, its binary number is \"#{ modulus.join }\""
 # end
 
-# decimal_to_binary([255, 456, 9])
-
+# puts decimal_to_binary(255)
+# puts decimal_to_binary(456)
+# puts decimal_to_binary(9)
